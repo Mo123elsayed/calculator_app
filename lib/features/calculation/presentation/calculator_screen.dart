@@ -11,7 +11,7 @@ import 'package:math_expressions/math_expressions.dart';
 class CalculatorScreen extends StatefulWidget {
   static const String screenRoute = '/home';
   const CalculatorScreen({super.key});
-  
+
 
   @override
   State<CalculatorScreen> createState() => _CalculatorScreenState();
@@ -108,7 +108,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   child: Text(
                     displayText.isEmpty
                         ? (_showCursor ? '|' : '')
-                        : '$displayText',
+                        : '$displayText ${_showCursor ? '|' : ''}',
                     style: AppText.white30Bold,
                   ),
                 ),
