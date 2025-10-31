@@ -127,7 +127,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 children: [
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
-                    btnColor: AppColor.operator,
+                    btnColor: AppColor.textPrimary,
                     onTapBtn: btnClick,
                     btnTxt: 'AC', 
                   ),
@@ -240,7 +240,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     btnTxt:'.',
                   ),
                   CustomButton(
-                    btnBckgrnd: AppColor.buttonBackground,
+                    btnBckgrnd: AppColor.operator,
                     onTapBtn: btnClick,
                     btnTxt: '=',
                   ),
