@@ -36,7 +36,10 @@ class CustomButton extends StatelessWidget {
           onTap: () {
             onTapBtn!(btnTxt);
           },
-          child: Text(btnTxt!, style: AppText.size30Bold),
+          child: Text(
+            btnTxt!,
+            style: AppText.size30Bold.copyWith(color: btnColor),
+          ),
         ),
       ),
     );
