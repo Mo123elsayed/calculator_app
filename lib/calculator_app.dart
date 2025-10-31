@@ -1,10 +1,9 @@
-import 'package:calculator_app/core/routing/app_router.dart';
-import 'package:calculator_app/core/routing/routes.dart';
+import 'package:calculator_app/features/calculation/presentation/calculator_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class CalculatorApp extends StatelessWidget {
-  final AppRouter appRouter;
-  const CalculatorApp({super.key, required this.appRouter});
+  const CalculatorApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +11,10 @@ class CalculatorApp extends StatelessWidget {
       designSize: const Size(375, 812),
       builder: (context, child) {
         return MaterialApp(
+          theme: ThemeData.dark(),
           title: 'Calculator App',
           debugShowCheckedModeBanner: false,
-          initialRoute: Routes.home,
-          onGenerateRoute: appRouter.generateRoute,
+          home: const CalculatorScreen(),
         );
       },
     );
