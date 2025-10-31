@@ -265,7 +265,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   ///
   void calculateResult() {
     try {
-      String expression = displayText.replaceAll('×', '*');
+      String expression = displayText.replaceAll('×', '*').replaceAll('÷', '/');
 
       // ignore: deprecated_member_use
       Parser p = Parser();

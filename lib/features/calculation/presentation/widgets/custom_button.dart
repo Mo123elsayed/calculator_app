@@ -25,15 +25,14 @@ class CustomButton extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          shape: BoxShape.circle,
+          borderRadius: BorderRadius.circular(12.r),
           color: btnBckgrnd ?? Colors.grey,
-          borderRadius: BorderRadius.circular(100.r),
         ),
         margin: EdgeInsets.all(8.w),
         height: 80.h,
         width: 70.w,
         child: InkWell(
-          borderRadius: BorderRadius.circular(100.r),
+          borderRadius: BorderRadius.circular(12.r),
           onTap: () {
             onTapBtn!(btnTxt);
           },
