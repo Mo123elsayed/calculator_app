@@ -7,7 +7,7 @@ class AppText {
     color: Colors.white,
   );
 
-  static const TextStyle size20Bold = TextStyle(
+  static const TextStyle size30Bold = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.bold,
   );

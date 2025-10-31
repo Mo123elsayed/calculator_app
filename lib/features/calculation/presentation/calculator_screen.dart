@@ -5,13 +5,11 @@ import 'package:calculator_app/features/calculation/presentation/widgets/custom_
 import 'package:flutter/material.dart';
 import 'package:calculator_app/core/theme/app_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:math_expressions/math_expressions.dart';
 
 class CalculatorScreen extends StatefulWidget {
   static const String screenRoute = '/home';
   const CalculatorScreen({super.key});
-
 
   @override
   State<CalculatorScreen> createState() => _CalculatorScreenState();
@@ -131,33 +129,25 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Text('AC', style: AppText.size20Bold),
+                    btnTxt: 'AC', 
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.clear,
                     onTapBtn: btnClick,
-                    child: Text('C', style: AppText.size20Bold),
+                    btnTxt: 'C',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.percent,
-                      color: AppColor.operator,
-                      size: 20.w,
-                    ),
+                    btnTxt: '%'
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.divide,
-                      color: AppColor.operator,
-                      size: 20.w,
-                    ),
+                    btnTxt: '÷',
                   ),
                 ],
               ),
@@ -166,27 +156,23 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('7', style: AppText.size20Bold),
-                  ),
-                  CustomButton(
-                    btnColor: AppColor.buttonBackground,
-                    onTapBtn: btnClick,
-                    child: Text('8', style: AppText.size20Bold),
+                    btnTxt: '7',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('9', style: AppText.size20Bold),
+                    btnTxt:'8', 
+                  ),
+                  CustomButton(
+                    btnBckgrnd: AppColor.buttonBackground,
+                    onTapBtn: btnClick,
+                    btnTxt: '9',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.multiply,
-                      color: AppColor.operator,
-                      size: 20.w,
-                    ),
+                    btnTxt: '×'
                   ),
                 ],
               ),
@@ -195,27 +181,23 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('4', style: AppText.size20Bold),
+                    btnTxt: '4',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('5', style: AppText.size20Bold),
+                    btnTxt: '5',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('6', style: AppText.size20Bold),
+                    btnTxt: '6',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.minus,
-                      color: AppColor.operator,
-                      size: 28.w,
-                    ),
+                    btnTxt: '-'
                   ),
                 ],
               ),
@@ -224,27 +206,23 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('1', style: AppText.size20Bold),
+                    btnTxt: '1', 
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('2', style: AppText.size20Bold),
+                    btnTxt:'2',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('3', style: AppText.size20Bold),
+                    btnTxt: '3',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     btnColor: AppColor.operator,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.plus,
-                      color: AppColor.operator,
-                      size: 28.w,
-                    ),
+                    btnTxt: '+'
                   ),
                 ],
               ),
@@ -254,23 +232,20 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
                     flex: 2,
-                    child: Text('0', style: AppText.size20Bold),
+                    btnTxt: '0',
                   ),
                   CustomButton(
                     btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Text('.', style: AppText.size20Bold),
+                    btnTxt:'.',
                   ),
                   CustomButton(
-                    btnColor: AppColor.buttonBackground,
-                    btnBckgrnd: AppColor.operator,
+                    btnBckgrnd: AppColor.buttonBackground,
                     onTapBtn: btnClick,
-                    child: Icon(
-                      FontAwesomeIcons.equals,
-                      color: AppColor.operator,
-                      size: 20.w,
-                    ),
+                    btnTxt: '=',
                   ),
+                    
+                  
                 ],
               ),
             ],
